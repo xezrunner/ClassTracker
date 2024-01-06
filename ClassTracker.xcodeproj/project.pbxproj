@@ -52,12 +52,12 @@
 			path = Controls;
 			sourceTree = "<group>";
 		};
-		21D71AB42B48D45E00A1008D /* Views */ = {
+		21D71AB42B48D45E00A1008D /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
 				21D71AB22B48D33900A1008D /* StudyClassDetailView.swift */,
 			);
-			path = Views;
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		21EFCC4D2B48A5C5003F315E = {
@@ -79,12 +79,11 @@
 		21EFCC582B48A5C5003F315E /* ClassTracker */ = {
 			isa = PBXGroup;
 			children = (
+				21F911B92B49F1510011A39A /* Data structures */,
 				219CF4E22B48EC65001B3E2F /* Controls */,
-				21D71AB42B48D45E00A1008D /* Views */,
-				21EFCC592B48A5C5003F315E /* ClassTrackerApp.swift */,
+				21D71AB42B48D45E00A1008D /* Subviews */,
 				21EFCC5B2B48A5C5003F315E /* ContentView.swift */,
-				21EFCC5D2B48A5C5003F315E /* StudyClass.swift */,
-				21904E322B48ADF500F752AC /* ColorData.swift */,
+				21EFCC592B48A5C5003F315E /* ClassTrackerApp.swift */,
 				21EFCC5F2B48A5C6003F315E /* Assets.xcassets */,
 				21EFCC642B48A5C6003F315E /* ClassTracker.entitlements */,
 				21EFCC652B48A5C6003F315E /* Info.plist */,
@@ -99,6 +98,15 @@
 				21EFCC622B48A5C6003F315E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		21F911B92B49F1510011A39A /* Data structures */ = {
+			isa = PBXGroup;
+			children = (
+				21EFCC5D2B48A5C5003F315E /* StudyClass.swift */,
+				21904E322B48ADF500F752AC /* ColorData.swift */,
+			);
+			path = "Data structures";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
