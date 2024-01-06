@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21904E332B48ADF500F752AC /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21904E322B48ADF500F752AC /* ColorData.swift */; };
+		219CF4E42B48EC7A001B3E2F /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219CF4E32B48EC7A001B3E2F /* TimePicker.swift */; };
+		21D71AB32B48D33900A1008D /* StudyClassDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D71AB22B48D33900A1008D /* StudyClassDetailView.swift */; };
+		21D71AB72B48DC7F00A1008D /* SFSymbolsPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 21D71AB62B48DC7F00A1008D /* SFSymbolsPicker */; };
 		21EFCC5A2B48A5C5003F315E /* ClassTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EFCC592B48A5C5003F315E /* ClassTrackerApp.swift */; };
 		21EFCC5C2B48A5C5003F315E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EFCC5B2B48A5C5003F315E /* ContentView.swift */; };
-		21EFCC5E2B48A5C5003F315E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EFCC5D2B48A5C5003F315E /* Item.swift */; };
+		21EFCC5E2B48A5C5003F315E /* StudyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EFCC5D2B48A5C5003F315E /* StudyClass.swift */; };
 		21EFCC602B48A5C6003F315E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EFCC5F2B48A5C6003F315E /* Assets.xcassets */; };
 		21EFCC632B48A5C6003F315E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EFCC622B48A5C6003F315E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21904E322B48ADF500F752AC /* ColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorData.swift; sourceTree = "<group>"; };
+		219CF4E32B48EC7A001B3E2F /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
+		21D71AB22B48D33900A1008D /* StudyClassDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyClassDetailView.swift; sourceTree = "<group>"; };
 		21EFCC562B48A5C5003F315E /* ClassTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EFCC592B48A5C5003F315E /* ClassTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTrackerApp.swift; sourceTree = "<group>"; };
 		21EFCC5B2B48A5C5003F315E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		21EFCC5D2B48A5C5003F315E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		21EFCC5D2B48A5C5003F315E /* StudyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyClass.swift; sourceTree = "<group>"; };
 		21EFCC5F2B48A5C6003F315E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21EFCC622B48A5C6003F315E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		21EFCC642B48A5C6003F315E /* ClassTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClassTracker.entitlements; sourceTree = "<group>"; };
@@ -30,12 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21D71AB72B48DC7F00A1008D /* SFSymbolsPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219CF4E22B48EC65001B3E2F /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				219CF4E32B48EC7A001B3E2F /* TimePicker.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		21D71AB42B48D45E00A1008D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				21D71AB22B48D33900A1008D /* StudyClassDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		21EFCC4D2B48A5C5003F315E = {
 			isa = PBXGroup;
 			children = (
@@ -55,9 +79,12 @@
 		21EFCC582B48A5C5003F315E /* ClassTracker */ = {
 			isa = PBXGroup;
 			children = (
+				219CF4E22B48EC65001B3E2F /* Controls */,
+				21D71AB42B48D45E00A1008D /* Views */,
 				21EFCC592B48A5C5003F315E /* ClassTrackerApp.swift */,
 				21EFCC5B2B48A5C5003F315E /* ContentView.swift */,
-				21EFCC5D2B48A5C5003F315E /* Item.swift */,
+				21EFCC5D2B48A5C5003F315E /* StudyClass.swift */,
+				21904E322B48ADF500F752AC /* ColorData.swift */,
 				21EFCC5F2B48A5C6003F315E /* Assets.xcassets */,
 				21EFCC642B48A5C6003F315E /* ClassTracker.entitlements */,
 				21EFCC652B48A5C6003F315E /* Info.plist */,
@@ -90,6 +117,9 @@
 			dependencies = (
 			);
 			name = ClassTracker;
+			packageProductDependencies = (
+				21D71AB62B48DC7F00A1008D /* SFSymbolsPicker */,
+			);
 			productName = ClassTracker;
 			productReference = 21EFCC562B48A5C5003F315E /* ClassTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +148,9 @@
 				Base,
 			);
 			mainGroup = 21EFCC4D2B48A5C5003F315E;
+			packageReferences = (
+				21D71AB52B48DC7F00A1008D /* XCRemoteSwiftPackageReference "SFSymbolsPicker" */,
+			);
 			productRefGroup = 21EFCC572B48A5C5003F315E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,9 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219CF4E42B48EC7A001B3E2F /* TimePicker.swift in Sources */,
 				21EFCC5C2B48A5C5003F315E /* ContentView.swift in Sources */,
-				21EFCC5E2B48A5C5003F315E /* Item.swift in Sources */,
+				21EFCC5E2B48A5C5003F315E /* StudyClass.swift in Sources */,
+				21904E332B48ADF500F752AC /* ColorData.swift in Sources */,
 				21EFCC5A2B48A5C5003F315E /* ClassTrackerApp.swift in Sources */,
+				21D71AB32B48D33900A1008D /* StudyClassDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClassTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = W7TTKAZX72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClassTracker/Info.plist;
@@ -289,6 +326,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClassTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = W7TTKAZX72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ClassTracker/Info.plist;
@@ -319,6 +358,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,6 +394,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21D71AB52B48DC7F00A1008D /* XCRemoteSwiftPackageReference "SFSymbolsPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alessiorubicini/SFSymbolsPicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21D71AB62B48DC7F00A1008D /* SFSymbolsPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21D71AB52B48DC7F00A1008D /* XCRemoteSwiftPackageReference "SFSymbolsPicker" */;
+			productName = SFSymbolsPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 21EFCC4E2B48A5C5003F315E /* Project object */;
 }

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "sfsymbolspicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/alessiorubicini/SFSymbolsPicker",
+      "state" : {
+        "revision" : "336e6f59e83dc759703aa80ab7826df9d281233c",
+        "version" : "1.0.4"
+      }
+    }
+  ],
+  "version" : 2
+}
