@@ -57,8 +57,8 @@ struct StudyClassDetailView: View {
                 }
                 
                 Section("Event settings") {
-                    DatePicker("From", selection: $studyClass.dateRange.start)
-                    DatePicker("To",   selection: $studyClass.dateRange.end)
+                  DatePicker("From", selection: $studyClass.dateRange.start, displayedComponents: .date)
+                    DatePicker("To",   selection: $studyClass.dateRange.end, displayedComponents: .date)
                     
                     TimePicker($studyClass.duration)
                 }
@@ -73,12 +73,13 @@ struct StudyClassDetailView: View {
             //.scrollContentBackground(.hidden)
             
         }
-        .tint(selectedColor)
         .toolbar {
             ToolbarItem {
                 Button(role: .destructive, action: deleteClass, label: { Label("Delete", systemImage: "trash") }).tint(.red)
             }
         }
+        .tint(selectedColor)
+        .accentColor(.red)
     }
  
     func deleteClass() {

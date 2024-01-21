@@ -55,12 +55,13 @@ final class StudyClass: Identifiable {
                           info: "Class where we learn about things.",
                           color: ColorData(Color.blue),
                           iconName: "graduationcap.circle",
-                          dateRange: DateInterval(start: .now, end: .distantFuture),
+                          dateRange: DateInterval(start: .now, end: Date(timeIntervalSinceNow: TimeInterval(86400 * 7))),
                           duration: StudyClass.defaultDuration,
                           notes: [])
     }
     
+  // TODO: Allow customizing this in settings!
     public static var defaultDuration: TimePickerValues {
-        return TimePickerValues(0,45,0)
+        return TimePickerValues(1,30,0)
     }
 }
