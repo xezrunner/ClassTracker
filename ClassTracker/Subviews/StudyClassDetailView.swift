@@ -37,7 +37,7 @@ struct StudyClassDetailView: View {
                         Label("Choose icon...", systemImage: studyClass.iconName)
                     }.sheet(isPresented: $isSymbolPickerPresented, content: {
                         SymbolsPicker(selection: $studyClass.iconName, title: "Select icon...", autoDismiss: true)
-                            .symbolRenderingMode(.multicolor)
+                            //.symbolRenderingMode(.multicolor)
                             .padding()
                     })
                     

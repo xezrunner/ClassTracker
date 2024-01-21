@@ -12,6 +12,8 @@ struct ContentView: View {
   @Environment(\.modelContext) private var modelContext
   @Query private var studyClasses: [StudyClass]
   
+  @State var progress: Double = 0.5
+  
   var body: some View {
     if (true) {
       NavigationSplitView(columnVisibility: .constant(.doubleColumn)) {
@@ -19,7 +21,9 @@ struct ContentView: View {
           VStack {
             Image(systemName: "sparkles")
               .symbolRenderingMode(.multicolor)
-              .resizable().frame(width: 48, height: 48)
+              .resizable()
+              .aspectRatio(contentMode: .fit)
+              .frame(height: 48)
               .padding()
             Text("You have no classes added.").bold()
             Button(action: addFirstItem) { Label("Add a class", systemImage: "plus.circle") }
@@ -29,7 +33,7 @@ struct ContentView: View {
           .padding(.horizontal, 35)
           .padding(.vertical, 15)
           .foregroundStyle(Color.secondary)
-          .background(Color(UIColor.secondarySystemBackground))
+          .background(Color(UIColor.secondarySystemBackground).opacity(0.75))
           .clipShape(RoundedRectangle(cornerRadius: 8))
           .toolbar {
             ToolbarItem {
@@ -37,6 +41,7 @@ struct ContentView: View {
                 Text("Settings") } label: { Label("Settings", systemImage: "gearshape") }
             }
           }
+          .navigationTitle("Classes")
         } else {
           List() {
             ForEach(studyClasses, id: \.self) { item in
@@ -63,8 +68,8 @@ struct ContentView: View {
           .listStyle(.sidebar)
           .accentColor(Color(UIColor.secondarySystemFill))
           .scrollContentBackground(.hidden)
-          .navigationTitle("Classes")
           .toolbar(removing: .sidebarToggle)
+          .navigationTitle("Classes")
           .toolbar {
             ToolbarItem() {
               Menu(content: {
@@ -89,7 +94,6 @@ struct ContentView: View {
       .animation(.default, value: studyClasses)
       .navigationSplitViewStyle(.balanced)
     }
-    
   }
   
   private func addFirstItem() {
