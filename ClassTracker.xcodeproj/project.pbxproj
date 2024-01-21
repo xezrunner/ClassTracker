@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		216F302E2B5CC4EA006BC147 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216F302D2B5CC4EA006BC147 /* WidgetKit.framework */; };
+		216F30302B5CC4EA006BC147 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216F302F2B5CC4EA006BC147 /* SwiftUI.framework */; };
+		216F30332B5CC4EA006BC147 /* ClassTrackerWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216F30322B5CC4EA006BC147 /* ClassTrackerWidgetBundle.swift */; };
+		216F30352B5CC4EA006BC147 /* ClassTrackerWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216F30342B5CC4EA006BC147 /* ClassTrackerWidgetLiveActivity.swift */; };
+		216F30372B5CC4EA006BC147 /* ClassTrackerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216F30362B5CC4EA006BC147 /* ClassTrackerWidget.swift */; };
+		216F30392B5CC4EB006BC147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 216F30382B5CC4EB006BC147 /* Assets.xcassets */; };
+		216F303D2B5CC4EB006BC147 /* ClassTrackerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 216F302B2B5CC4EA006BC147 /* ClassTrackerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		216F30422B5CC8E1006BC147 /* StudyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EFCC5D2B48A5C5003F315E /* StudyClass.swift */; };
+		216F30432B5CC8E4006BC147 /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21904E322B48ADF500F752AC /* ColorData.swift */; };
+		2183FF1C2B5CCB810063549B /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219CF4E32B48EC7A001B3E2F /* TimePicker.swift */; };
+		218959D22B5CD1BE004F9E90 /* ProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218959D12B5CD1BE004F9E90 /* ProgressCircle.swift */; };
+		218959D32B5CD1BE004F9E90 /* ProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218959D12B5CD1BE004F9E90 /* ProgressCircle.swift */; };
 		21904E332B48ADF500F752AC /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21904E322B48ADF500F752AC /* ColorData.swift */; };
 		219CF4E42B48EC7A001B3E2F /* TimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219CF4E32B48EC7A001B3E2F /* TimePicker.swift */; };
 		21D71AB32B48D33900A1008D /* StudyClassDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D71AB22B48D33900A1008D /* StudyClassDetailView.swift */; };
@@ -18,7 +30,40 @@
 		21EFCC632B48A5C6003F315E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EFCC622B48A5C6003F315E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		216F303B2B5CC4EB006BC147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21EFCC4E2B48A5C5003F315E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 216F302A2B5CC4EA006BC147;
+			remoteInfo = ClassTrackerWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		216F303E2B5CC4EB006BC147 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				216F303D2B5CC4EB006BC147 /* ClassTrackerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		216F302B2B5CC4EA006BC147 /* ClassTrackerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClassTrackerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		216F302D2B5CC4EA006BC147 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		216F302F2B5CC4EA006BC147 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		216F30322B5CC4EA006BC147 /* ClassTrackerWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTrackerWidgetBundle.swift; sourceTree = "<group>"; };
+		216F30342B5CC4EA006BC147 /* ClassTrackerWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTrackerWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		216F30362B5CC4EA006BC147 /* ClassTrackerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTrackerWidget.swift; sourceTree = "<group>"; };
+		216F30382B5CC4EB006BC147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		216F303A2B5CC4EB006BC147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		218959D12B5CD1BE004F9E90 /* ProgressCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircle.swift; sourceTree = "<group>"; };
 		21904E322B48ADF500F752AC /* ColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorData.swift; sourceTree = "<group>"; };
 		219CF4E32B48EC7A001B3E2F /* TimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePicker.swift; sourceTree = "<group>"; };
 		21D71AB22B48D33900A1008D /* StudyClassDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyClassDetailView.swift; sourceTree = "<group>"; };
@@ -33,6 +78,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		216F30282B5CC4EA006BC147 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				216F30302B5CC4EA006BC147 /* SwiftUI.framework in Frameworks */,
+				216F302E2B5CC4EA006BC147 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21EFCC532B48A5C5003F315E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,10 +98,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		216F302C2B5CC4EA006BC147 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				216F302D2B5CC4EA006BC147 /* WidgetKit.framework */,
+				216F302F2B5CC4EA006BC147 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		216F30312B5CC4EA006BC147 /* ClassTrackerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				216F30322B5CC4EA006BC147 /* ClassTrackerWidgetBundle.swift */,
+				216F30342B5CC4EA006BC147 /* ClassTrackerWidgetLiveActivity.swift */,
+				216F30362B5CC4EA006BC147 /* ClassTrackerWidget.swift */,
+				216F30382B5CC4EB006BC147 /* Assets.xcassets */,
+				216F303A2B5CC4EB006BC147 /* Info.plist */,
+			);
+			path = ClassTrackerWidget;
+			sourceTree = "<group>";
+		};
 		219CF4E22B48EC65001B3E2F /* Controls */ = {
 			isa = PBXGroup;
 			children = (
 				219CF4E32B48EC7A001B3E2F /* TimePicker.swift */,
+				218959D12B5CD1BE004F9E90 /* ProgressCircle.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -64,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				21EFCC582B48A5C5003F315E /* ClassTracker */,
+				216F30312B5CC4EA006BC147 /* ClassTrackerWidget */,
+				216F302C2B5CC4EA006BC147 /* Frameworks */,
 				21EFCC572B48A5C5003F315E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				21EFCC562B48A5C5003F315E /* ClassTracker.app */,
+				216F302B2B5CC4EA006BC147 /* ClassTrackerWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +191,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		216F302A2B5CC4EA006BC147 /* ClassTrackerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 216F30412B5CC4EB006BC147 /* Build configuration list for PBXNativeTarget "ClassTrackerWidgetExtension" */;
+			buildPhases = (
+				216F30272B5CC4EA006BC147 /* Sources */,
+				216F30282B5CC4EA006BC147 /* Frameworks */,
+				216F30292B5CC4EA006BC147 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClassTrackerWidgetExtension;
+			productName = ClassTrackerWidgetExtension;
+			productReference = 216F302B2B5CC4EA006BC147 /* ClassTrackerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		21EFCC552B48A5C5003F315E /* ClassTracker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21EFCC682B48A5C6003F315E /* Build configuration list for PBXNativeTarget "ClassTracker" */;
@@ -119,10 +215,12 @@
 				21EFCC522B48A5C5003F315E /* Sources */,
 				21EFCC532B48A5C5003F315E /* Frameworks */,
 				21EFCC542B48A5C5003F315E /* Resources */,
+				216F303E2B5CC4EB006BC147 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				216F303C2B5CC4EB006BC147 /* PBXTargetDependency */,
 			);
 			name = ClassTracker;
 			packageProductDependencies = (
@@ -139,9 +237,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
+					216F302A2B5CC4EA006BC147 = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					21EFCC552B48A5C5003F315E = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -164,11 +265,20 @@
 			projectRoot = "";
 			targets = (
 				21EFCC552B48A5C5003F315E /* ClassTracker */,
+				216F302A2B5CC4EA006BC147 /* ClassTrackerWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		216F30292B5CC4EA006BC147 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				216F30392B5CC4EB006BC147 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21EFCC542B48A5C5003F315E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,6 +291,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		216F30272B5CC4EA006BC147 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2183FF1C2B5CCB810063549B /* TimePicker.swift in Sources */,
+				216F30352B5CC4EA006BC147 /* ClassTrackerWidgetLiveActivity.swift in Sources */,
+				216F30372B5CC4EA006BC147 /* ClassTrackerWidget.swift in Sources */,
+				216F30432B5CC8E4006BC147 /* ColorData.swift in Sources */,
+				218959D32B5CD1BE004F9E90 /* ProgressCircle.swift in Sources */,
+				216F30422B5CC8E1006BC147 /* StudyClass.swift in Sources */,
+				216F30332B5CC4EA006BC147 /* ClassTrackerWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21EFCC522B48A5C5003F315E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +313,7 @@
 				21EFCC5C2B48A5C5003F315E /* ContentView.swift in Sources */,
 				21EFCC5E2B48A5C5003F315E /* StudyClass.swift in Sources */,
 				21904E332B48ADF500F752AC /* ColorData.swift in Sources */,
+				218959D22B5CD1BE004F9E90 /* ProgressCircle.swift in Sources */,
 				21EFCC5A2B48A5C5003F315E /* ClassTrackerApp.swift in Sources */,
 				21D71AB32B48D33900A1008D /* StudyClassDetailView.swift in Sources */,
 			);
@@ -196,7 +321,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		216F303C2B5CC4EB006BC147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 216F302A2B5CC4EA006BC147 /* ClassTrackerWidgetExtension */;
+			targetProxy = 216F303B2B5CC4EB006BC147 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		216F303F2B5CC4EB006BC147 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = W7TTKAZX72;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClassTrackerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClassTrackerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xz-software.ClassTracker.ClassTrackerWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		216F30402B5CC4EB006BC147 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = W7TTKAZX72;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClassTrackerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ClassTrackerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xz-software.ClassTracker.ClassTrackerWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		21EFCC662B48A5C6003F315E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -319,6 +508,7 @@
 		21EFCC692B48A5C6003F315E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ClassTracker/ClassTracker.entitlements;
@@ -351,6 +541,7 @@
 		21EFCC6A2B48A5C6003F315E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ClassTracker/ClassTracker.entitlements;
@@ -383,6 +574,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		216F30412B5CC4EB006BC147 /* Build configuration list for PBXNativeTarget "ClassTrackerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				216F303F2B5CC4EB006BC147 /* Debug */,
+				216F30402B5CC4EB006BC147 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		21EFCC512B48A5C5003F315E /* Build configuration list for PBXProject "ClassTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
